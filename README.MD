@@ -24,5 +24,14 @@ accessTokenSecret <YOUR ACCESS TOKEN SECRET>
 This file will be read by the example and your credentials will be used to consume data from Twitter.
 
 
+### Using TCP examples for Apache logs
+
+Apache log related examples expect some logs being sent to a TCP socket listening in a specific port.
+
+Use `ncat` tool if you're using Windows or `nc` if you're using Linux or MacOS. A example of `nc` would be:
+
+```
+nc -l 9999 < access_log.txt
+```
 
 Have fun!!
